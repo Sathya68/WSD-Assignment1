@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            
+            background-size: cover;
+            color: #333; 
+        }
+
+        header {
+            background: rgba(0, 122, 204, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-top: 10px;
+            border: 3px solid white; /* Profile photo border */
+        }
+
+        nav {
+            background: rgba(0, 85, 153, 0.9);
+            text-align: center;
+            position: sticky; 
+            top: 0;
+            z-index: 10;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(0, 64, 128, 0.8); 
+            border-radius: 5px;
+        } 
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background: #A0C4FF;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        p{
+            color: black
+        }
+
+        h2 {
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+            color: #007acc; 
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 122, 204, 0.9);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maddula Sathya Vardhan Reddy</h1>
+        <p color: white>Full Stack Developer | Open Source Contributor</p>
+        <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+    </header>
+
+    <nav>
+        <a href="#summary">Home</a>
+        <a href="#education">Education</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>Hi, I'm <strong>Sathya.</strong> I completed my Bachelor's in Computer Science and Engineering from Vellore Institute of Technology, Andhra Pradesh, India. Currently, I'm pursuing my master's in Computer Science at NJIT, specializing in full-stack development. I'm proficient in Python, Java, HTML, CSS, and JavaScript. My internship at Aragen Life Science Ltd has equipped me with hands-on experience in building dynamic web applications. I am passionate about creating clean, functional, and user-friendly websites.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>High School Diploma, Pallavi Model School, Hyderabad (2016-2018)</li>
+                <li>Bachelor of Science in Computer Science, Vellore Institute of Technology, Andhra Pradesh (2020-2024)</li>
+                <li>Master of Science in Computer Science, New Jersey Institute of Technology, New Jersey (2024-Present)</li>
+            </ul>
+        </section>
+
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <h3><strong>Full Stack Developer Intern</strong> at Aragen Life Sciences Ltd</h3>
+                    <p>Developed responsive websites and collaborated with designers to create seamless user experiences.</p>
+                </li>
+                <li>
+                    <h3><strong>Intern</strong> at Surya Informatics Ltd</h3>
+                    <p>Developed a machine learning model on Amazon Product Review Sentiment Analysis.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Version Control (Git)</li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Coding and contributing to open-source projects</li>
+                <li>Playing outdoor sports like Football and Cricket</li>
+                <li>Playing chess</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> Maddula.Sathya@gmail.com</p>
+            <p><strong>Phone Number:</strong> 201-887-9131</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sathya-vardhan-reddy-maddula/" target="_blank">Sathya-Vardhan-Reddy-Maddula</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <small>Copyright © Sathya Vardhan Reddy. All Rights Reserved.</small>
+    </footer>
+</body>
+</html>
